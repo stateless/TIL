@@ -20,5 +20,11 @@ echo '{"ram": 4096}' | vmadm update $ZONEID
 Successfully updated ZONEID
 ```
 
+# Autostart
+```
+echo '{ "autoboot": false }' | vmadm update $ZONEID
+vmadm get $ZONEID | grep auto
+```
+
 # Notes
 [Source](https://wiki.smartos.org/managing-instances-with-vmamd/)
