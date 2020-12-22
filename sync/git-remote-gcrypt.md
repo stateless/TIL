@@ -31,7 +31,7 @@ git clone gcrypt::rsync://example.com:repo
 
 Migrate exisiting repository to encrypted local repository
 ```
-git init --base ~/git/gcrypt/repo.git
+git init --bare ~/git/gcrypt/repo.git
 git remote set-url origin gcrypt::~/git/gcrypt/repo.git
 git push --all
 ```
