@@ -8,6 +8,12 @@
 apt install git-remote-gcrypt
 ```
 
+Setup gpg
+```
+gpg --gen-key
+```
+
+
 ## Usage
 
 ```shell
