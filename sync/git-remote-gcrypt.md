@@ -4,13 +4,13 @@
 
 ## Install
 
-``shell
+```shell
 apt install git-remote-gcrypt
-``
+```
 
 ## Usage
 
-``shell
+```shell
 git init
 git remote add cryptremote gcrypt::rsync://example.com:repo
 git config remote.cryptremote.gcrypt-participants "KEY1 KEY2"
@@ -19,24 +19,24 @@ git pull cryptremote
 ``
 
 Clone repository to new directory
-``shell
+```shell
 git clone gcrypt::rsync://example.com:repo
-``
+```
 
 Migrate exisiting repository to encrypted local repository
-``
+```
 git init --base ~/git/gcrypt/repo.git
 git remote set-url origin gcrypt::~/git/gcrypt/repo.git
 git push --all
-``
+```
 
 ## Alternative SSH Port
 See .ssh/config
-``
+```
 Host example.com
   Hostname example.com
   Port XXXX
-``
+```
 
 ## See Also
 
