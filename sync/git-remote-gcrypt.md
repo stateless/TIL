@@ -16,7 +16,7 @@ git remote add cryptremote gcrypt::rsync://example.com:repo
 git config remote.cryptremote.gcrypt-participants "KEY1 KEY2"
 git config remote.cryptremote.gcrypt-publish-participants true
 git pull cryptremote
-``
+```
 
 Clone repository to new directory
 ```shell
