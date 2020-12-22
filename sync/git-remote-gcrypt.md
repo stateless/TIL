@@ -4,13 +4,13 @@
 
 ## Install
 
-``
+``shell
 apt install git-remote-gcrypt
 ``
 
 ## Usage
 
-``
+``shell
 git init
 git remote add cryptremote gcrypt::rsync://example.com:repo
 git config remote.cryptremote.gcrypt-participants "KEY1 KEY2"
@@ -19,7 +19,7 @@ git pull cryptremote
 ``
 
 Clone repository to new directory
-``
+``shell
 git clone gcrypt::rsync://example.com:repo
 ``
 
